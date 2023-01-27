@@ -1,0 +1,30 @@
+.home-container {
+    position: absolute;
+    margin:8rem 0rem 0rem 0px;
+    left:3rem;
+    width:80vw;
+    /* box-shadow: 7px 5px 7px 5px rgba(0, 0, 0, 0.2); */
+    border-radius: 1rem;
+    height: 3rem;
+  }
+.home-container img{
+    width:96vw;
+    height:81vh;
+}
+.header-img img{
+   width:25vw;
+   color:black;
+    top:-35vh;
+    left:3vw;
+    position:absolute;
+}
+.header-img h1{
+    width:30vw;
+    color:black;
+    font-size:1rem;
+    top:13vh;
+    color:rgb(75, 14, 3);
+    font-weight:bold;
+    left:11vw;
+    position:absolute;  
+}

@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Ubuntu", sans-serif;
+}
+.main-container {
+ display: "flex";
+ width: 10vw;
+ /* height: 100vh; */
+}
+main {
+  padding: "3rem";
+  z-index:2;
+}
+
+.sidebar {
+  background: #003140;
+  color: white;
+  position:fixed;
+  z-index: 1;
+  height: 100vh;
+}
+/* .route-page{
+  display: block;
+  position:absolute;
+} */
+.top-bar {
+  background: #003140;
+  width: 100vw;
+  height: 4rem;
+  position: fixed;
+  left: 2.5rem;
+}
+.top-bar h1 {
+  font-size: 2rem;
+  color: white;
+  padding: 0.8rem 0 0 1rem;
+}
+.top-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 10px;
+  margin:0.5rem 0 1rem 0 ;
+}
+.logo img {
+  /* font-size: 18px; */
+  width: 100px;
+  height: 30px;
+  line-height: 0;
+}
+.link-text {
+  white-space: nowrap;
+  font-size: 15px;
+  text-decoration: none;
+  margin:1rem 0;
+}
+.icon{
+  margin:1rem 0;
+}
+.link {
+  display: flex;
+  text-decoration:none;
+  color: white;
+  gap: 1rem;
+  padding: 5px 10px;
+}
+.link:hover {
+  border-right: 4px solid white;
+  color:white;
+  background: #017fa5;
+  transition: 0.2s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+}
+.active {
+  border-right: 4px solid white;
+  background: #017fa5;
+}
+.data-table{
+  position:absolute;
+  margin: 5rem 4rem 0rem 3rem;
+}
+.active {
+  border-right: 4px solid white;
+  background: none;
+}
+.drop-down {
+  width: 13rem;
+  height: 12rem;
+  box-shadow: 7px 5px 7px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 0.5rem;
+  background: rgb(248, 244, 244);
+  z-index: 4;
+  position: absolute;
+}
+/* .table > thead {
+  vertical-align: middle;
+} */
+.filter:hover {
+  transform: scale(110%);
+  cursor: pointer;
+}
+.okay {
+  margin: 0.3rem 0 0 4.5rem;
+}
+#css_custom {
+  margin: 0.5rem;
+  width: 12rem;
+  height: 8rem;
+  outline: 0px solid transparent;
+  color: black;
+  font-weight: bold;
+}
+.export-btn:hover{
+ transform: scale(105%);
+ transition: .6s;
+}
+
+@media screen and (max-width: 960px) {
+  
+  .top-bar{
+    width: 250vw;
+    height:5vh;
+    }
+  .data-table{
+    z-index:1;
+  }
+}
+
+@media screen and (max-width:375px){
+  .sidebar{
+    z-index:3;
+  }
+  .top-bar h1{
+    font-size:1.5rem;
+    padding: 0.2rem 0 0 1rem;
+  }
+}
